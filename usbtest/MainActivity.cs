@@ -129,59 +129,59 @@ namespace usbtest
 
             usb.clearbuffer();
 
-            //Tells it to download a file to flash, with the name PRINTREG.BAS. All the following commands until EOP are lines written to the file.
-            usb.sendcommand("DOWNLOAD F, \"PRINTREG.BAS\"\r\n");
+            ////Tells it to download a file to flash, with the name PRINTREG.BAS. All the following commands until EOP are lines written to the file.
+            //usb.sendcommand("DOWNLOAD F, \"PRINTREG.BAS\"\r\n");
 
-            //LOADMAT Sets LEDs and Key to be configurable.
-            usb.sendcommand(":LOADMAT\r\n");
-            usb.sendcommand("SET KEY1 OFF\r\n");
-            usb.sendcommand("SET LED1 OFF\r\n");
-            usb.sendcommand("SET LED3 OFF\r\n");
+            ////LOADMAT Sets LEDs and Key to be configurable.
+            //usb.sendcommand(":LOADMAT\r\n");
+            //usb.sendcommand("SET KEY1 OFF\r\n");
+            //usb.sendcommand("SET LED1 OFF\r\n");
+            //usb.sendcommand("SET LED3 OFF\r\n");
 
-            //CHKKEY - Initial feed of 170. Flash LED until button pressed then call REFEED.
-            usb.sendcommand(":CHKKEY\r\n");
+            ////CHKKEY - Initial feed of 170. Flash LED until button pressed then call REFEED.
+            //usb.sendcommand(":CHKKEY\r\n");
 
-            usb.sendcommand("LED1 = 0\r\n");
-            usb.sendcommand("LED3 = 0\r\n");
+            //usb.sendcommand("LED1 = 0\r\n");
+            //usb.sendcommand("LED3 = 0\r\n");
 
-            usb.sendcommand("FOR I = 1 TO 250\r\n");
-            usb.sendcommand("REM\r\n");
-            usb.sendcommand("NEXT I\r\n");
+            //usb.sendcommand("FOR I = 1 TO 250\r\n");
+            //usb.sendcommand("REM\r\n");
+            //usb.sendcommand("NEXT I\r\n");
 
-            usb.sendcommand("LED3 = 1\r\n");
+            //usb.sendcommand("LED3 = 1\r\n");
 
-            usb.sendcommand("FOR I = 1 TO 250\r\n");
-            usb.sendcommand("REM\r\n");
-            usb.sendcommand("NEXT I\r\n");
+            //usb.sendcommand("FOR I = 1 TO 250\r\n");
+            //usb.sendcommand("REM\r\n");
+            //usb.sendcommand("NEXT I\r\n");
 
-            usb.sendcommand("IF KEY1 = 1 THEN\r\n");
-            usb.sendcommand("FEED 100\r\n");
-            usb.sendcommand("GOTO REFEED\r\n");
-            usb.sendcommand("ELSE\r\n");
-            usb.sendcommand("GOTO CHKKEY\r\n");
-            usb.sendcommand("ENDIF\r\n");
+            //usb.sendcommand("IF KEY1 = 1 THEN\r\n");
+            //usb.sendcommand("FEED 100\r\n");
+            //usb.sendcommand("GOTO REFEED\r\n");
+            //usb.sendcommand("ELSE\r\n");
+            //usb.sendcommand("GOTO CHKKEY\r\n");
+            //usb.sendcommand("ENDIF\r\n");
 
-            //REFEED - Turn LED solid red and incremental feed until sensor is triggered then go to SETUP.
-            usb.sendcommand(":REFEED\r\n");
-            usb.sendcommand("LED1 = 0\r\n");
-            usb.sendcommand("IF PEEL = 0 THEN\r\n");
-            usb.sendcommand("LED3 = 1\r\n");
-            usb.sendcommand("FEED 1\r\n");
-            usb.sendcommand("GOTO REFEED\r\n");
-            usb.sendcommand("ELSE\r\n");
-            usb.sendcommand("GOTO SETUP\r\n");
-            usb.sendcommand("ENDIF\r\n");
+            ////REFEED - Turn LED solid red and incremental feed until sensor is triggered then go to SETUP.
+            //usb.sendcommand(":REFEED\r\n");
+            //usb.sendcommand("LED1 = 0\r\n");
+            //usb.sendcommand("IF PEEL = 0 THEN\r\n");
+            //usb.sendcommand("LED3 = 1\r\n");
+            //usb.sendcommand("FEED 1\r\n");
+            //usb.sendcommand("GOTO REFEED\r\n");
+            //usb.sendcommand("ELSE\r\n");
+            //usb.sendcommand("GOTO SETUP\r\n");
+            //usb.sendcommand("ENDIF\r\n");
 
-            //SETUP - Turn LED green and backfeed 160.
-            usb.sendcommand(":SETUP\r\n");
-            usb.sendcommand("LED3 = 0\r\n");
-            usb.sendcommand("LED1 = 1\r\n");
-            usb.sendcommand("BACKFEED 160\r\n");
-            usb.sendcommand("EOP\r\n");
+            ////SETUP - Turn LED green and backfeed 160.
+            //usb.sendcommand(":SETUP\r\n");
+            //usb.sendcommand("LED3 = 0\r\n");
+            //usb.sendcommand("LED1 = 1\r\n");
+            //usb.sendcommand("BACKFEED 160\r\n");
+            //usb.sendcommand("EOP\r\n");
 
-            ////This calls the PRINTREG.BAS file that is downloaded above.
-            usb.sendcommand("PRINTREG\r\n");
-            usb.sendcommand("CLS\r\n");
+            //////This calls the PRINTREG.BAS file that is downloaded above.
+            //usb.sendcommand("PRINTREG\r\n");
+            //usb.sendcommand("CLS\r\n");
 
             try
             {
@@ -210,12 +210,12 @@ namespace usbtest
             FindViewById<TextView>(Resource.Id.textView1).Text += System.Environment.NewLine + "Send CLS";
             //usb.sendcommand("CLS\r\n");
             ////Puts the PLATE.PCX into the buffer.
-            //usb.sendcommand("PUTPCX 15,15,\"PLATE.PCX\"\r\n");
-
+            usb.sendcommand("PUTPCX 15,15,\"PLATE.PCX\"\r\n");
+            
             //var filepathtext = "TEXT 100,100,\"3\",0,1,1,\"" + PCXPath.ToString() + "\"\r\n";
             //usb.sendcommand(filepathtext.ToString());
 
-            //usb.printlabel(1, 1);
+            usb.printlabel(1, 1);
             usb.closeport();
 
         }
