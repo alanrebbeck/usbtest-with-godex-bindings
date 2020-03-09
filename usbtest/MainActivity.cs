@@ -129,7 +129,7 @@ namespace usbtest
 
             usb.clearbuffer();
 
-            ////Tells it to download a file to flash, with the name PRINTREG.BAS. All the following commands until EOP are lines written to the file.
+            //Tells it to download a file to flash, with the name PRINTREG.BAS. All the following commands until EOP are lines written to the file.
             //usb.sendcommand("DOWNLOAD F, \"PRINTREG.BAS\"\r\n");
 
             ////LOADMAT Sets LEDs and Key to be configurable.
@@ -179,9 +179,8 @@ namespace usbtest
             //usb.sendcommand("BACKFEED 160\r\n");
             //usb.sendcommand("EOP\r\n");
 
-            //////This calls the PRINTREG.BAS file that is downloaded above.
-            //usb.sendcommand("PRINTREG\r\n");
-            //usb.sendcommand("CLS\r\n");
+           
+            usb.sendcommand("CLS\r\n");
 
             try
             {
@@ -211,10 +210,11 @@ namespace usbtest
             //usb.sendcommand("CLS\r\n");
             ////Puts the PLATE.PCX into the buffer.
             usb.sendcommand("PUTPCX 15,15,\"PLATE.PCX\"\r\n");
-            
+
             //var filepathtext = "TEXT 100,100,\"3\",0,1,1,\"" + PCXPath.ToString() + "\"\r\n";
             //usb.sendcommand(filepathtext.ToString());
-
+            ////This calls the PRINTREG.BAS file that is downloaded above.
+            usb.sendcommand("PRINTREG\r\n");
             usb.printlabel(1, 1);
             usb.closeport();
 
