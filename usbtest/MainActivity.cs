@@ -186,18 +186,28 @@ namespace usbtest
             try
             {
                 byte[] data = System.IO.File.ReadAllBytes(PCXPath);
+                FindViewById<TextView>(Resource.Id.textView1).Text += System.Environment.NewLine + "Convert File to Bytes";
                 string download = "DOWNLOAD F, \"" + "PLATE.PCX" + "\"," + data.Length + ",";
+                FindViewById<TextView>(Resource.Id.textView1).Text += System.Environment.NewLine + "Build download command";
                 //byte[] download_foot = Encoding.ASCII.GetBytes(System.Environment.NewLine);
                 byte[] download_head = Encoding.UTF8.GetBytes(download);
+                FindViewById<TextView>(Resource.Id.textView1).Text += System.Environment.NewLine + "Convert Download Command to Byte";
 
                 usb.sendcommand(download_head.Concat(data).ToArray());
-                
+                FindViewById<TextView>(Resource.Id.textView1).Text += System.Environment.NewLine + "Send Head and Data Bytes in Command";
+
+                usb.sendcommand(Encoding.UTF8.GetBytes(System.Environment.NewLine));
+
+                FindViewById<TextView>(Resource.Id.textView1).Text += System.Environment.NewLine + "Send NewLine as Bytes";
+
             }
             catch (Exception ex)
             {
                 FindViewById<TextView>(Resource.Id.textView1).Text = ex.Message;
             }
-            usb.sendcommand("\r\nCLS\r\n");
+            usb.sendcommand("CLS\r\n");
+
+            FindViewById<TextView>(Resource.Id.textView1).Text += System.Environment.NewLine + "Send CLS";
             //usb.sendcommand("CLS\r\n");
             ////Puts the PLATE.PCX into the buffer.
             //usb.sendcommand("PUTPCX 15,15,\"PLATE.PCX\"\r\n");
