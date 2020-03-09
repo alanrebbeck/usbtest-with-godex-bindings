@@ -111,7 +111,7 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="tsclib">
-      <HintPath>..\..\TSC_Xamarin_Android_USB_Example\usbtest\usbtest\bin\x64\Debug\tsclib.dll</HintPath>
+      <HintPath>..\lib\tsclib.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Arch.Core.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.Android.Arch.Core.Common.1.1.1.3\lib\monoandroid80\Xamarin.Android.Arch.Core.Common.dll</HintPath>

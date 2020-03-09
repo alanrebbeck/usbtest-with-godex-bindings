@@ -26,8 +26,6 @@ namespace usbtest
 		
 		public static void UpdateIdValues()
 		{
-			global::tsclib.Resource.String.ApplicationName = global::usbtest.Resource.String.ApplicationName;
-			global::tsclib.Resource.String.Hello = global::usbtest.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
