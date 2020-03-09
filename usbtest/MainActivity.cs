@@ -183,50 +183,29 @@ namespace usbtest
             usb.sendcommand("PRINTREG\r\n");
             usb.sendcommand("CLS\r\n");
 
-
             try
             {
-                FileInputStream fis = new FileInputStream(PCXPath);
-                byte[] data = new byte[fis.Available()];
-                string download = "DOWNLOAD \"" + "PLATE.PCX" + "\"," + data.Length + ",";
+                byte[] data = System.IO.File.ReadAllBytes(PCXPath);
+                string download = "DOWNLOAD F, \"" + "PLATE.PCX" + "\"," + data.Length + ",";
+                //byte[] download_foot = Encoding.ASCII.GetBytes(System.Environment.NewLine);
                 byte[] download_head = Encoding.UTF8.GetBytes(download);
 
-
-
-                while (fis.Read(data) != -1)
-                {
-                    ;
-                }
-
-                //this.OutStream.write(download_head);
-                //this.OutStream.write(data);
-                usb.sendcommand(download_head.Concat(data).ToString());
-
-
-                usb.sendcommand("\r\n");
-
-                fis.Close();
+                usb.sendcommand(download_head.Concat(data).ToArray());
+                
             }
             catch (Exception ex)
             {
                 FindViewById<TextView>(Resource.Id.textView1).Text = ex.Message;
             }
-
-
-
-            usb.sendcommand("CLS\r\n");
+            usb.sendcommand("\r\nCLS\r\n");
+            //usb.sendcommand("CLS\r\n");
             ////Puts the PLATE.PCX into the buffer.
-            usb.sendcommand("PUTPCX 15,15,\"PLATE.PCX\"\r\n");
-        
+            //usb.sendcommand("PUTPCX 15,15,\"PLATE.PCX\"\r\n");
 
+            //var filepathtext = "TEXT 100,100,\"3\",0,1,1,\"" + PCXPath.ToString() + "\"\r\n";
+            //usb.sendcommand(filepathtext.ToString());
 
-
-
-            var filepathtext = "TEXT 100,100,\"3\",0,1,1,\"" + PCXPath.ToString() + "\"\r\n";
-            usb.sendcommand(filepathtext.ToString());
-
-
-            usb.printlabel(1, 1);
+            //usb.printlabel(1, 1);
             usb.closeport();
 
         }
