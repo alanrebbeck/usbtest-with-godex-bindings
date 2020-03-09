@@ -8,6 +8,11 @@ using System.Linq;
 using tsclib;
 using System.Text;
 using System;
+using Java.IO;
+using Android.Support.V4.Content;
+using Android;
+using Android.Content.PM;
+using System.Threading;
 
 namespace usbtest
 {
@@ -28,27 +33,73 @@ namespace usbtest
         private static UsbManager mUsbManager;
         private static UsbDevice mUsbDevice;
         private static PendingIntent mPermissionIntent;
+        public string DownloadsPath { get; set; }
+        public string PCXPath { get; set; }
 
         tsclib.usb usb = new tsclib.usb();
 
         protected override void OnCreate(Bundle bundle)
         {
-            base.OnCreate(bundle);
-            // Set our view from the "main" layout resource
-             SetContentView (Resource.Layout.Main);
+            try
+            {
+                base.OnCreate(bundle);
+                // Set our view from the "main" layout resource
+                SetContentView(Resource.Layout.Main);
 
-            mUsbManager = (UsbManager)this.GetSystemService(Context.UsbService);
-            var matchingDevice = mUsbManager.DeviceList.FirstOrDefault(item => item.Value.VendorId == 4611 || item.Value.ProductId == 37022);
-            var usbPort = matchingDevice.Key;
-            mUsbDevice = matchingDevice.Value;
-            mPermissionIntent = PendingIntent.GetBroadcast(this, 0, new Intent(ACTION_USB_PERMISSION), 0);
-            mUsbManager.RequestPermission(mUsbDevice, mPermissionIntent);
-            
-            tv1 = FindViewById<TextView>(Resource.Id.textView1);
-            button1 = FindViewById<Button>(Resource.Id.button1);
-            button1.Click += delegate { send(); };
+                mUsbManager = (UsbManager)this.GetSystemService(Context.UsbService);
+                var matchingDevice = mUsbManager.DeviceList.FirstOrDefault(item => item.Value.VendorId == 4611 || item.Value.ProductId == 37022);
+                var usbPort = matchingDevice.Key;
+                mUsbDevice = matchingDevice.Value;
+                mPermissionIntent = PendingIntent.GetBroadcast(this, 0, new Intent(ACTION_USB_PERMISSION), 0);
+                mUsbManager.RequestPermission(mUsbDevice, mPermissionIntent);
+
+                tv1 = FindViewById<TextView>(Resource.Id.textView1);
+                button1 = FindViewById<Button>(Resource.Id.button1);
+                button1.Click += delegate { send(); };
+            }
+            catch (System.Exception)
+            {
+
+                //throw;
+            }
+            var DownloadsPath = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).AbsolutePath.ToString();
+
+            Java.IO.File directory = new Java.IO.File(DownloadsPath);
+            Java.IO.File[] files = directory.ListFiles();//always count is 0 even though there are lot files there
+
+            var fileList = new StringBuilder();
+            foreach (var i in files)
+            {
+                //FileInfo info = new FileInfo(i.Name);
+                //if (info.Name.Contains("Wall_e"))
+                //{
+                //    di.Add(new DownloadedImages { Path1 = info.DirectoryName, Name1 = info.FullName });
+                //}
+                fileList.AppendLine(i.AbsolutePath);
+                if (i.Name.ToLower().Contains("pcx"))
+                {
+                    PCXPath = i.AbsolutePath;
+                }
+            }
 
 
+            var outputString = DownloadsPath;
+            outputString += hasReadPermissions() ? " / YesRead" : " / NoRead";
+            outputString += hasWritePermissions() ? " / YesWrite" : " / NoWrite";
+            outputString += System.Environment.NewLine + fileList.ToString();
+            FindViewById<TextView>(Resource.Id.textView1).Text = outputString;
+
+
+        }
+
+        private bool hasReadPermissions()
+        {
+            return (ContextCompat.CheckSelfPermission(this, Manifest.Permission.ReadExternalStorage) == Permission.Granted);
+        }
+
+        private bool hasWritePermissions()
+        {
+            return (ContextCompat.CheckSelfPermission(this, Manifest.Permission.WriteExternalStorage) == Permission.Granted);
         }
 
 
@@ -130,15 +181,56 @@ namespace usbtest
 
             ////This calls the PRINTREG.BAS file that is downloaded above.
             usb.sendcommand("PRINTREG\r\n");
+            usb.sendcommand("CLS\r\n");
+
+
+            try
+            {
+                FileInputStream fis = new FileInputStream(PCXPath);
+                byte[] data = new byte[fis.Available()];
+                string download = "DOWNLOAD \"" + "PLATE.PCX" + "\"," + data.Length + ",";
+                byte[] download_head = Encoding.UTF8.GetBytes(download);
 
 
 
-            usb.sendcommand("TEXT 100,100,\"3\",0,1,1,\"ALAN\"\r\n");
-               
-            usb.printlabel(1, 1);
-       
-        }
+                while (fis.Read(data) != -1)
+                {
+                    ;
+                }
+
+                //this.OutStream.write(download_head);
+                //this.OutStream.write(data);
+                usb.sendcommand(download_head.Concat(data).ToString());
+
+
+                usb.sendcommand("\r\n");
+
+                fis.Close();
+            }
+            catch (Exception ex)
+            {
+                FindViewById<TextView>(Resource.Id.textView1).Text = ex.Message;
+            }
+
+
+
+            usb.sendcommand("CLS\r\n");
+            ////Puts the PLATE.PCX into the buffer.
+            usb.sendcommand("PUTPCX 15,15,\"PLATE.PCX\"\r\n");
         
+
+
+
+
+            var filepathtext = "TEXT 100,100,\"3\",0,1,1,\"" + PCXPath.ToString() + "\"\r\n";
+            usb.sendcommand(filepathtext.ToString());
+
+
+            usb.printlabel(1, 1);
+            usb.closeport();
+
+        }
+
 
 
     }
