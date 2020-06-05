@@ -1,0 +1,17 @@
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\x64\Debug\usbtest.csprojResolveAssemblyReference.cache
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\bin\x64\Debug\usbtest.dll
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\bin\x64\Debug\usbtest.pdb
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\bin\x64\Debug\usbtest.usbtest.apk
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\bin\x64\Debug\usbtest.usbtest-Signed.apk
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\bin\x64\Debug\tsclib.dll
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\x64\Debug\usbtest.dll
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\x64\Debug\usbtest.pdb
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\x64\Debug\android\bin\usbtest.usbtest.apk
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\x64\Debug\res\layout\main.xml
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\x64\Debug\res\values\strings.xml
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\x64\Debug\res\drawable\icon.png
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\x64\Debug\res\xml\device_filter.xml
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\x64\Debug\R.cs.flag
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\x64\Debug\uploadflags.txt
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\bin\x64\Debug\usbtest.dll.mdb
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\x64\Debug\android\assets\usbtest.dll.mdb

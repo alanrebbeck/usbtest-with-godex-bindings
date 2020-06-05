@@ -1,0 +1,729 @@
+<api>
+  <package name="com.godex" jni-name="com/godex">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="Bluetooth_LE" static="false" visibility="public" jni-signature="Lcom/godex/Bluetooth_LE;">
+      <constructor deprecated="not deprecated" final="false" name="Bluetooth_LE" jni-signature="(Landroid/content/Context;)V" bridge="false" static="false" type="com.godex.Bluetooth_LE" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="BLERead" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="BLESend" jni-signature="([B)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="databyte" type="byte[]" jni-type="[B">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="ConnectBLE" jni-signature="(Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="MacAddress" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="DisconnectBLE" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.bluetooth.BluetoothGattCallback" extends-generic-aware="android.bluetooth.BluetoothGattCallback" jni-extends="Landroid/bluetooth/BluetoothGattCallback;" final="false" name="Bluetooth_LE.1" static="false" visibility="" jni-signature="Lcom/godex/Bluetooth_LE$1;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="Godex" static="false" visibility="public" jni-signature="Lcom/godex/Godex;">
+      <constructor deprecated="not deprecated" final="false" name="Godex" jni-signature="()V" bridge="false" static="false" type="com.godex.Godex" synthetic="false" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="AsiaFont_TextOut" jni-signature="(Lcom/godex/Godex$AsianFontID;IIIIILjava/lang/String;Ljava/lang/String;Lcom/godex/Godex$AsiaEncoding;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="FontID" type="com.godex.Godex.AsianFontID" jni-type="Lcom/godex/Godex$AsianFontID;">
+        </parameter>
+        <parameter name="PosX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PoxY" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Mul_X" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Mul_Y" type="int" jni-type="I">
+        </parameter>
+        <parameter name="spaceChar" type="int" jni-type="I">
+        </parameter>
+        <parameter name="RotationStyle" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="encoding" type="com.godex.Godex.AsiaEncoding" jni-type="Lcom/godex/Godex$AsiaEncoding;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="BMPformat" jni-signature="(Landroid/graphics/Bitmap;)[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="bitmap" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="Bar_1D" jni-signature="(Lcom/godex/Godex$BarCodeType;IIIIIILcom/godex/Godex$Readable;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="Type" type="com.godex.Godex.BarCodeType" jni-type="Lcom/godex/Godex$BarCodeType;">
+        </parameter>
+        <parameter name="PosX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PosY" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Narrow" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Width" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Height" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Rotation" type="int" jni-type="I">
+        </parameter>
+        <parameter name="readable" type="com.godex.Godex.Readable" jni-type="Lcom/godex/Godex$Readable;">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="Bar_Aztec" jni-signature="(IIIILjava/lang/String;ILjava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="PosX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PosY" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Rotation" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Mul" type="int" jni-type="I">
+        </parameter>
+        <parameter name="ECICS" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="Type" type="int" jni-type="I">
+        </parameter>
+        <parameter name="MenuSymbol" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="Bar_DataMatrix" jni-signature="(IIILjava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="PosX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PosY" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Enlarge" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Rotation" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="Bar_GS1Databar" jni-signature="(Lcom/godex/Godex$BarGS1Type;IIIIIILcom/godex/Godex$Readable;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="Type" type="com.godex.Godex.BarGS1Type" jni-type="Lcom/godex/Godex$BarGS1Type;">
+        </parameter>
+        <parameter name="PosX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PosY" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Narrow" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Segment" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Height" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Rotation" type="int" jni-type="I">
+        </parameter>
+        <parameter name="readable" type="com.godex.Godex.Readable" jni-type="Lcom/godex/Godex$Readable;">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="Bar_Maxicode" jni-signature="(IIIIIILjava/lang/String;IILjava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="PosX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PosY" type="int" jni-type="I">
+        </parameter>
+        <parameter name="SymbolNo" type="int" jni-type="I">
+        </parameter>
+        <parameter name="SetNO" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Mode" type="int" jni-type="I">
+        </parameter>
+        <parameter name="CountryCode" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PostalCode" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="Class" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Rotation" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="Bar_PDF147" jni-signature="(IIIIIIIILjava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="PosX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PosY" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Width" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Height" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Row" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Col" type="int" jni-type="I">
+        </parameter>
+        <parameter name="ErrLevel" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Rotation" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="Bar_QRCode" jni-signature="(IIIILjava/lang/String;IIILjava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="PosX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PosY" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Mode" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Type" type="int" jni-type="I">
+        </parameter>
+        <parameter name="ErrLevel" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="Mask" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Mul" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Rotation" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="CheckStatus" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="InternalFont_TextOut" jni-signature="(Lcom/godex/Godex$InternalFontID;IIIIILjava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="FontID" type="com.godex.Godex.InternalFontID" jni-type="Lcom/godex/Godex$InternalFontID;">
+        </parameter>
+        <parameter name="PosX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PoxY" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Mul_X" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Mul_Y" type="int" jni-type="I">
+        </parameter>
+        <parameter name="spaceChar" type="int" jni-type="I">
+        </parameter>
+        <parameter name="RotationStyle" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="SoftFont_TextOut" jni-signature="(Lcom/godex/Godex$DownlaodFontID;IIIIILjava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="FontID" type="com.godex.Godex.DownlaodFontID" jni-type="Lcom/godex/Godex$DownlaodFontID;">
+        </parameter>
+        <parameter name="PosX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PoxY" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Mul_X" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Mul_Y" type="int" jni-type="I">
+        </parameter>
+        <parameter name="spaceChar" type="int" jni-type="I">
+        </parameter>
+        <parameter name="RotationStyle" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="TrueTypeFont_TextOut" jni-signature="(Lcom/godex/Godex$DownlaodFontID;IIIIILjava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="FontID" type="com.godex.Godex.DownlaodFontID" jni-type="Lcom/godex/Godex$DownlaodFontID;">
+        </parameter>
+        <parameter name="PosX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PoxY" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Font_W" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Font_H" type="int" jni-type="I">
+        </parameter>
+        <parameter name="spaceChar" type="int" jni-type="I">
+        </parameter>
+        <parameter name="RotationStyle" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="WiFiPrinterSearch" jni-signature="()Ljava/util/ArrayList;" bridge="false" native="false" return="java.util.ArrayList&lt;java.lang.String&gt;" jni-return="Ljava/util/ArrayList&lt;Ljava/lang/String;&gt;;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="close" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="debug" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="select" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="ecTextDownload" jni-signature="(Landroid/graphics/Typeface;IIIZZZLjava/lang/String;Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="typeface" type="android.graphics.Typeface" jni-type="Landroid/graphics/Typeface;">
+        </parameter>
+        <parameter name="Style" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Size" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Degree" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Inverse" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Underline" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Strikeout" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="FileName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="ecTextDownload" jni-signature="(Ljava/lang/String;IIZZZLjava/lang/String;Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="TTFpath" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="Size" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Degree" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Inverse" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Underline" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Strikeout" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="FileName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="ecTextOut" jni-signature="(IILandroid/graphics/Typeface;IIIZZZLjava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="PosX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PosY" type="int" jni-type="I">
+        </parameter>
+        <parameter name="typeface" type="android.graphics.Typeface" jni-type="Landroid/graphics/Typeface;">
+        </parameter>
+        <parameter name="Style" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Size" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Degree" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Inverse" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Underline" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Strikeout" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="ecTextOut" jni-signature="(IILjava/lang/String;IIZZZLjava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="PosX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PosY" type="int" jni-type="I">
+        </parameter>
+        <parameter name="TTFpath" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="Size" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Degree" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Inverse" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Underline" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Strikeout" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="ecTextOutWordWrap" jni-signature="(IILandroid/graphics/Typeface;IIIIZZZLjava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="PosX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PosY" type="int" jni-type="I">
+        </parameter>
+        <parameter name="typeface" type="android.graphics.Typeface" jni-type="Landroid/graphics/Typeface;">
+        </parameter>
+        <parameter name="Style" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Size" type="int" jni-type="I">
+        </parameter>
+        <parameter name="WrapWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Degree" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Inverse" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Underline" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Strikeout" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="ecTextOutWordWrap" jni-signature="(IILjava/lang/String;IIIZZZLjava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="PosX" type="int" jni-type="I">
+        </parameter>
+        <parameter name="PosY" type="int" jni-type="I">
+        </parameter>
+        <parameter name="TTFpath" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="Size" type="int" jni-type="I">
+        </parameter>
+        <parameter name="WrapWidth" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Degree" type="int" jni-type="I">
+        </parameter>
+        <parameter name="Inverse" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Underline" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Strikeout" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="Data" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMainContext" jni-signature="(Landroid/content/Context;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="loadImage" jni-signature="(Ljava/lang/String;Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="filepath" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="ID_name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="FileNotFoundException" type="java.io.FileNotFoundException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="openport" jni-signature="(Ljava/lang/String;I)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="address" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="connect" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="printCmdFile" jni-signature="(Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="filepath" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="FileNotFoundException" type="java.io.FileNotFoundException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="putImage" jni-signature="(IILandroid/graphics/Bitmap;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="px" type="int" jni-type="I">
+        </parameter>
+        <parameter name="py" type="int" jni-type="I">
+        </parameter>
+        <parameter name="picture" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="read" jni-signature="([Ljava/lang/String;)I" bridge="false" native="false" return="int" jni-return="I" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="message" type="java.lang.String[]" jni-type="[Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="readByte" jni-signature="([B)I" bridge="false" native="false" return="int" jni-return="I" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="data" type="byte[]" jni-type="[B">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="sendCommand" jni-signature="(Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="messages" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="sendCommand" jni-signature="(Ljava/lang/String;Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="messages" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="code" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setup" jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="mm" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="dark" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="speed" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="mode" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="gap" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="top" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeByte" jni-signature="([B)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="gmsgBuffer" type="byte[]" jni-type="[B">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="false" name="Insb" jni-signature="Z" static="true" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.util.LinkedHashMap" extends-generic-aware="java.util.LinkedHashMap&lt;com.godex.Godex.BarCodeType, java.lang.String&gt;" jni-extends="Ljava/util/LinkedHashMap;" final="false" name="Godex.1" static="false" visibility="" jni-signature="Lcom/godex/Godex$1;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="java.util.LinkedHashMap" extends-generic-aware="java.util.LinkedHashMap&lt;java.lang.String, java.lang.String&gt;" jni-extends="Ljava/util/LinkedHashMap;" final="false" name="Godex.2" static="false" visibility="" jni-signature="Lcom/godex/Godex$2;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="java.util.LinkedHashMap" extends-generic-aware="java.util.LinkedHashMap&lt;java.lang.String, java.lang.String&gt;" jni-extends="Ljava/util/LinkedHashMap;" final="false" name="Godex.3" static="false" visibility="" jni-signature="Lcom/godex/Godex$3;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="java.util.HashMap" extends-generic-aware="java.util.HashMap&lt;java.lang.String, java.lang.String&gt;" jni-extends="Ljava/util/HashMap;" final="false" name="Godex.4" static="false" visibility="" jni-signature="Lcom/godex/Godex$4;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.godex.Godex.AsiaEncoding&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="Godex.AsiaEncoding" static="true" visibility="public" jni-signature="Lcom/godex/Godex$AsiaEncoding;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/godex/Godex$AsiaEncoding;" bridge="false" native="false" return="com.godex.Godex.AsiaEncoding" jni-return="Lcom/godex/Godex$AsiaEncoding;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/godex/Godex$AsiaEncoding;" bridge="false" native="false" return="com.godex.Godex.AsiaEncoding[]" jni-return="[Lcom/godex/Godex$AsiaEncoding;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="BIG5" jni-signature="Lcom/godex/Godex$AsiaEncoding;" static="true" transient="false" type="com.godex.Godex.AsiaEncoding" type-generic-aware="com.godex.Godex.AsiaEncoding" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EUC_KR" jni-signature="Lcom/godex/Godex$AsiaEncoding;" static="true" transient="false" type="com.godex.Godex.AsiaEncoding" type-generic-aware="com.godex.Godex.AsiaEncoding" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="GB2312" jni-signature="Lcom/godex/Godex$AsiaEncoding;" static="true" transient="false" type="com.godex.Godex.AsiaEncoding" type-generic-aware="com.godex.Godex.AsiaEncoding" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="SJIS" jni-signature="Lcom/godex/Godex$AsiaEncoding;" static="true" transient="false" type="com.godex.Godex.AsiaEncoding" type-generic-aware="com.godex.Godex.AsiaEncoding" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.godex.Godex.AsianFontID&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="Godex.AsianFontID" static="true" visibility="public" jni-signature="Lcom/godex/Godex$AsianFontID;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/godex/Godex$AsianFontID;" bridge="false" native="false" return="com.godex.Godex.AsianFontID" jni-return="Lcom/godex/Godex$AsianFontID;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/godex/Godex$AsianFontID;" bridge="false" native="false" return="com.godex.Godex.AsianFontID[]" jni-return="[Lcom/godex/Godex$AsianFontID;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="Z1" jni-signature="Lcom/godex/Godex$AsianFontID;" static="true" transient="false" type="com.godex.Godex.AsianFontID" type-generic-aware="com.godex.Godex.AsianFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Z2" jni-signature="Lcom/godex/Godex$AsianFontID;" static="true" transient="false" type="com.godex.Godex.AsianFontID" type-generic-aware="com.godex.Godex.AsianFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Z3" jni-signature="Lcom/godex/Godex$AsianFontID;" static="true" transient="false" type="com.godex.Godex.AsianFontID" type-generic-aware="com.godex.Godex.AsianFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Z4" jni-signature="Lcom/godex/Godex$AsianFontID;" static="true" transient="false" type="com.godex.Godex.AsianFontID" type-generic-aware="com.godex.Godex.AsianFontID" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.godex.Godex.BarCodeType&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="Godex.BarCodeType" static="true" visibility="public" jni-signature="Lcom/godex/Godex$BarCodeType;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="getType" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/godex/Godex$BarCodeType;" bridge="false" native="false" return="com.godex.Godex.BarCodeType" jni-return="Lcom/godex/Godex$BarCodeType;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/godex/Godex$BarCodeType;" bridge="false" native="false" return="com.godex.Godex.BarCodeType[]" jni-return="[Lcom/godex/Godex$BarCodeType;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="Codabar" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Code128_Auto" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Code128_Subset" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Code39" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Code39_Check" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Code39_Extended" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Code39_ExtendedCheck" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Code39_ExtendedCheckS" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Code39_ExtendedS" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Code93" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EAN128" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EAN13" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EAN13_Add2" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EAN13_Add5" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EAN8" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EAN8_Add2" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="EAN8_Add5" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="FIM" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="GermanPost" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="HIBC" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="I2of5" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="I2of5_CheckDigit" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="I2of5_CheckDigitNoRead" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="I2of5_Industrial" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="I2of5_ShippingBearerBars" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="I2of5_Standard" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="ISBT" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="ITF14" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="JPPostnet" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Logmars" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="MSI_1MOD10" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="MSI_1MOD1110" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="MSI_2MOD10" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="MSI_NoDigitCheck" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Plant11_13" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Plessey" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="PostNET" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="RPS128" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Telepen" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="UCC_128" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="UCC_EAN128_KMART" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="UCC_EAN128_RANDOM" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="UPCA" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="UPCA_Add2" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="UPCA_Add5" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="UPCE" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="UPCE_Add2" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="UPCE_Add5" jni-signature="Lcom/godex/Godex$BarCodeType;" static="true" transient="false" type="com.godex.Godex.BarCodeType" type-generic-aware="com.godex.Godex.BarCodeType" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.godex.Godex.BarGS1Type&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="Godex.BarGS1Type" static="true" visibility="public" jni-signature="Lcom/godex/Godex$BarGS1Type;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/godex/Godex$BarGS1Type;" bridge="false" native="false" return="com.godex.Godex.BarGS1Type" jni-return="Lcom/godex/Godex$BarGS1Type;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/godex/Godex$BarGS1Type;" bridge="false" native="false" return="com.godex.Godex.BarGS1Type[]" jni-return="[Lcom/godex/Godex$BarGS1Type;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="Expanded" jni-signature="Lcom/godex/Godex$BarGS1Type;" static="true" transient="false" type="com.godex.Godex.BarGS1Type" type-generic-aware="com.godex.Godex.BarGS1Type" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Expanded_Stacked" jni-signature="Lcom/godex/Godex$BarGS1Type;" static="true" transient="false" type="com.godex.Godex.BarGS1Type" type-generic-aware="com.godex.Godex.BarGS1Type" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Limited" jni-signature="Lcom/godex/Godex$BarGS1Type;" static="true" transient="false" type="com.godex.Godex.BarGS1Type" type-generic-aware="com.godex.Godex.BarGS1Type" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Omnidir" jni-signature="Lcom/godex/Godex$BarGS1Type;" static="true" transient="false" type="com.godex.Godex.BarGS1Type" type-generic-aware="com.godex.Godex.BarGS1Type" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Stacked" jni-signature="Lcom/godex/Godex$BarGS1Type;" static="true" transient="false" type="com.godex.Godex.BarGS1Type" type-generic-aware="com.godex.Godex.BarGS1Type" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Stacked_Omnidir" jni-signature="Lcom/godex/Godex$BarGS1Type;" static="true" transient="false" type="com.godex.Godex.BarGS1Type" type-generic-aware="com.godex.Godex.BarGS1Type" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Truncated" jni-signature="Lcom/godex/Godex$BarGS1Type;" static="true" transient="false" type="com.godex.Godex.BarGS1Type" type-generic-aware="com.godex.Godex.BarGS1Type" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.godex.Godex.DownlaodFontID&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="Godex.DownlaodFontID" static="true" visibility="public" jni-signature="Lcom/godex/Godex$DownlaodFontID;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/godex/Godex$DownlaodFontID;" bridge="false" native="false" return="com.godex.Godex.DownlaodFontID" jni-return="Lcom/godex/Godex$DownlaodFontID;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/godex/Godex$DownlaodFontID;" bridge="false" native="false" return="com.godex.Godex.DownlaodFontID[]" jni-return="[Lcom/godex/Godex$DownlaodFontID;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="A" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="B" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="C" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="D" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="E" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="F" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="G" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="H" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="I" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="J" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="K" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="L" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="M" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="N" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="None" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="O" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="P" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Q" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="R" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="S" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="T" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="U" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Z" jni-signature="Lcom/godex/Godex$DownlaodFontID;" static="true" transient="false" type="com.godex.Godex.DownlaodFontID" type-generic-aware="com.godex.Godex.DownlaodFontID" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.godex.Godex.InternalFontID&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="Godex.InternalFontID" static="true" visibility="public" jni-signature="Lcom/godex/Godex$InternalFontID;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/godex/Godex$InternalFontID;" bridge="false" native="false" return="com.godex.Godex.InternalFontID" jni-return="Lcom/godex/Godex$InternalFontID;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/godex/Godex$InternalFontID;" bridge="false" native="false" return="com.godex.Godex.InternalFontID[]" jni-return="[Lcom/godex/Godex$InternalFontID;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="A" jni-signature="Lcom/godex/Godex$InternalFontID;" static="true" transient="false" type="com.godex.Godex.InternalFontID" type-generic-aware="com.godex.Godex.InternalFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="B" jni-signature="Lcom/godex/Godex$InternalFontID;" static="true" transient="false" type="com.godex.Godex.InternalFontID" type-generic-aware="com.godex.Godex.InternalFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="C" jni-signature="Lcom/godex/Godex$InternalFontID;" static="true" transient="false" type="com.godex.Godex.InternalFontID" type-generic-aware="com.godex.Godex.InternalFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="D" jni-signature="Lcom/godex/Godex$InternalFontID;" static="true" transient="false" type="com.godex.Godex.InternalFontID" type-generic-aware="com.godex.Godex.InternalFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="E" jni-signature="Lcom/godex/Godex$InternalFontID;" static="true" transient="false" type="com.godex.Godex.InternalFontID" type-generic-aware="com.godex.Godex.InternalFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="F" jni-signature="Lcom/godex/Godex$InternalFontID;" static="true" transient="false" type="com.godex.Godex.InternalFontID" type-generic-aware="com.godex.Godex.InternalFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="G" jni-signature="Lcom/godex/Godex$InternalFontID;" static="true" transient="false" type="com.godex.Godex.InternalFontID" type-generic-aware="com.godex.Godex.InternalFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="H" jni-signature="Lcom/godex/Godex$InternalFontID;" static="true" transient="false" type="com.godex.Godex.InternalFontID" type-generic-aware="com.godex.Godex.InternalFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="I" jni-signature="Lcom/godex/Godex$InternalFontID;" static="true" transient="false" type="com.godex.Godex.InternalFontID" type-generic-aware="com.godex.Godex.InternalFontID" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="J" jni-signature="Lcom/godex/Godex$InternalFontID;" static="true" transient="false" type="com.godex.Godex.InternalFontID" type-generic-aware="com.godex.Godex.InternalFontID" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.godex.Godex.Readable&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="Godex.Readable" static="true" visibility="public" jni-signature="Lcom/godex/Godex$Readable;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/godex/Godex$Readable;" bridge="false" native="false" return="com.godex.Godex.Readable" jni-return="Lcom/godex/Godex$Readable;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/godex/Godex$Readable;" bridge="false" native="false" return="com.godex.Godex.Readable[]" jni-return="[Lcom/godex/Godex$Readable;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <field deprecated="not deprecated" final="true" name="Bottom_Centered" jni-signature="Lcom/godex/Godex$Readable;" static="true" transient="false" type="com.godex.Godex.Readable" type-generic-aware="com.godex.Godex.Readable" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Bottom_Left" jni-signature="Lcom/godex/Godex$Readable;" static="true" transient="false" type="com.godex.Godex.Readable" type-generic-aware="com.godex.Godex.Readable" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Bottom_Right" jni-signature="Lcom/godex/Godex$Readable;" static="true" transient="false" type="com.godex.Godex.Readable" type-generic-aware="com.godex.Godex.Readable" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="None" jni-signature="Lcom/godex/Godex$Readable;" static="true" transient="false" type="com.godex.Godex.Readable" type-generic-aware="com.godex.Godex.Readable" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Top_Centered" jni-signature="Lcom/godex/Godex$Readable;" static="true" transient="false" type="com.godex.Godex.Readable" type-generic-aware="com.godex.Godex.Readable" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Top_Left" jni-signature="Lcom/godex/Godex$Readable;" static="true" transient="false" type="com.godex.Godex.Readable" type-generic-aware="com.godex.Godex.Readable" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="Top_Right" jni-signature="Lcom/godex/Godex$Readable;" static="true" transient="false" type="com.godex.Godex.Readable" type-generic-aware="com.godex.Godex.Readable" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="UDP_ScanPrinter" static="false" visibility="" jni-signature="Lcom/godex/UDP_ScanPrinter;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="Scan" jni-signature="()Ljava/util/ArrayList;" bridge="false" native="false" return="java.util.ArrayList&lt;java.lang.String&gt;" jni-return="Ljava/util/ArrayList&lt;Ljava/lang/String;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="UDP_ScanPrinter.1" static="false" visibility="" jni-signature="Lcom/godex/UDP_ScanPrinter$1;">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable" jni-type="Ljava/lang/Runnable;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="UDP_ScanPrinter.2" static="false" visibility="" jni-signature="Lcom/godex/UDP_ScanPrinter$2;">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable" jni-type="Ljava/lang/Runnable;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+  </package>
+</api>

@@ -1,0 +1,17 @@
+C:\Users\programmer\Desktop\usbtest\usbtest\bin\x86\Release\usbtest.dll
+C:\Users\programmer\Desktop\usbtest\usbtest\bin\x86\Release\usbtest.pdb
+C:\Users\programmer\Desktop\usbtest\usbtest\bin\x86\Release\usbtest.usbtest.apk
+C:\Users\programmer\Desktop\usbtest\usbtest\bin\x86\Release\usbtest.usbtest-Signed.apk
+C:\Users\programmer\Desktop\usbtest\usbtest\bin\x86\Release\tsclib.dll
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\x86\Release\usbtest.csprojResolveAssemblyReference.cache
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\x86\Release\usbtest.dll
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\x86\Release\usbtest.pdb
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\x86\Release\android\bin\usbtest.usbtest.apk
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\x86\Release\res\layout\main.xml
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\x86\Release\res\values\strings.xml
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\x86\Release\res\drawable\icon.png
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\x86\Release\res\xml\device_filter.xml
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\x86\Release\R.cs.flag
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\x86\Release\uploadflags.txt
+C:\Users\programmer\Desktop\usbtest\usbtest\bin\x86\Release\usbtest.dll.mdb
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\x86\Release\android\assets\usbtest.dll.mdb

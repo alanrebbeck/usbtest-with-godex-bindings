@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="usbtest.usbtest" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="25" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="usbtest" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+    <activity android:icon="@drawable/icon" android:label="usbtest" android:name="md5ef0eb7ef9a4dae218a9b326e40f9e527.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/device_filter" />
+      <meta-data android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" android:resource="@xml/device_filter" />
+      <intent-filter>
+        <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+        <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
+      </intent-filter>
+    </activity>
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="usbtest.usbtest.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.usbtest.usbtest" />
+      </intent-filter>
+    </receiver>
+  </application>
+  <receiver android:name=".MainActivity">
+    <intent-filter>
+      <action android:name="android.intent.action.UMS_CONNECTED" />
+      <action android:name="android.intent.action.UMS_DISCONNECTED" />
+      <action android:name="android.intent.action.USB_DEVICE_ATTACHED" android:resource="@xml/device_filter" />
+      <action android:name="android.intent.action.MEDIA_MOUNTED" />
+    </intent-filter>
+  </receiver>
+</manifest>

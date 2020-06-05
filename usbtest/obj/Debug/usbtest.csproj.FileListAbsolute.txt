@@ -1,0 +1,33 @@
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\bin\Debug\usbtest.dll
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\bin\Debug\usbtest.pdb
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\bin\Debug\usbtest.usbtest.apk
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\bin\Debug\usbtest.usbtest-Signed.apk
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\bin\Debug\tsclib.dll
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\Debug\usbtest.csprojResolveAssemblyReference.cache
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\Debug\usbtest.dll
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\Debug\usbtest.pdb
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\Debug\android\bin\usbtest.usbtest.apk
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\Debug\res\layout\main.xml
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\Debug\res\values\strings.xml
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\Debug\res\drawable\icon.png
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\Debug\res\xml\device_filter.xml
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\Debug\R.cs.flag
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\Debug\uploadflags.txt
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\bin\Debug\usbtest.dll.mdb
+c:\users\muta\documents\visual studio 2015\Projects\usbtest\usbtest\obj\Debug\android\assets\usbtest.dll.mdb
+C:\Users\programmer\Desktop\usbtest\usbtest\bin\Debug\usbtest.dll
+C:\Users\programmer\Desktop\usbtest\usbtest\bin\Debug\usbtest.pdb
+C:\Users\programmer\Desktop\usbtest\usbtest\bin\Debug\usbtest.usbtest.apk
+C:\Users\programmer\Desktop\usbtest\usbtest\bin\Debug\usbtest.usbtest-Signed.apk
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\Debug\usbtest.csprojResolveAssemblyReference.cache
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\Debug\usbtest.dll
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\Debug\usbtest.pdb
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\Debug\android\bin\usbtest.usbtest.apk
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\Debug\res\layout\main.xml
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\Debug\res\values\strings.xml
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\Debug\res\drawable\icon.png
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\Debug\res\xml\device_filter.xml
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\Debug\R.cs.flag
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\Debug\uploadflags.txt
+C:\Users\programmer\Desktop\usbtest\usbtest\bin\Debug\usbtest.dll.mdb
+C:\Users\programmer\Desktop\usbtest\usbtest\obj\Debug\android\assets\usbtest.dll.mdb

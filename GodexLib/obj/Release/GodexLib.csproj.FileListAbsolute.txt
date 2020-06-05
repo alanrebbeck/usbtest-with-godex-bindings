@@ -1,0 +1,7 @@
+C:\Godex_based on usb\usbtest\GodexLib\bin\Release\GodexLib.dll
+C:\Godex_based on usb\usbtest\GodexLib\bin\Release\GodexLib.pdb
+C:\Godex_based on usb\usbtest\GodexLib\obj\Release\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+C:\Godex_based on usb\usbtest\GodexLib\obj\Release\GodexLib.csprojAssemblyReference.cache
+C:\Godex_based on usb\usbtest\GodexLib\obj\Release\GodexLib.csproj.CoreCompileInputs.cache
+C:\Godex_based on usb\usbtest\GodexLib\obj\Release\GodexLib.dll
+C:\Godex_based on usb\usbtest\GodexLib\obj\Release\GodexLib.pdb

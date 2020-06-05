@@ -1,0 +1,4 @@
+usbtest.MainActivity, usbtest;md5ef0eb7ef9a4dae218a9b326e40f9e527.MainActivity
+usbtest.MainActivity, usbtest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5ef0eb7ef9a4dae218a9b326e40f9e527.MainActivity
+usbtest.MainActivity;md5ef0eb7ef9a4dae218a9b326e40f9e527.MainActivity
+usbtest.MainActivity;md5ef0eb7ef9a4dae218a9b326e40f9e527.MainActivity

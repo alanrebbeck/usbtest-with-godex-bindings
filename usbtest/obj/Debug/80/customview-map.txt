@@ -1,0 +1,9 @@
+Button;obj\Debug\80\res\layout\main.xml
+LinearLayout;obj\Debug\80\res\layout\main.xml
+resources;C:\Godex_based on usb\usbtest\usbtest\obj\Debug\80\lp\0\jl\res\values\strings.xml
+resources;obj\Debug\80\res\values\strings.xml
+resources;obj\Debug\80\res\xml\device_filter.xml
+string;C:\Godex_based on usb\usbtest\usbtest\obj\Debug\80\lp\0\jl\res\values\strings.xml
+string;obj\Debug\80\res\values\strings.xml
+TextView;obj\Debug\80\res\layout\main.xml
+usb-device;obj\Debug\80\res\xml\device_filter.xml
