@@ -15,7 +15,7 @@ namespace usbtest
 {
 	
 	
-	[System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
 	public partial class Resource
 	{
 		
@@ -26,8 +26,6 @@ namespace usbtest
 		
 		public static void UpdateIdValues()
 		{
-			global::tsclib.Resource.String.ApplicationName = global::usbtest.Resource.String.ApplicationName;
-			global::tsclib.Resource.String.Hello = global::usbtest.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
